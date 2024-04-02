@@ -11,15 +11,17 @@ function countAandB(input) {
 }
 
 function toNumber(input) {
-    const letterToNumber = {
-        'a': 1,
-        'b': 2,
-        'c': 3,
-        'd': 4,
-        'e': 5
-    };
+    // const letterToNumber = {
+    //     'a': 1,
+    //     'b': 2,
+    //     'c': 3,
+    //     'd': 4,
+    //     'e': 5
+    // };
 
-    let result = input.map((item) => letterToNumber[item])
+    // let result = input.map((item) => letterToNumber[item])
+
+    let result = input.map((item) => item.charCodeAt() - 96);
 
     return result;
 }
