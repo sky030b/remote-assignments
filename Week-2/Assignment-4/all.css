@@ -53,6 +53,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -76,4 +77,8 @@ body {
     font-size: 1.25rem;
     cursor: pointer;
     font-weight: 600;
+}
+
+.d-none {
+    display: none;
 }
