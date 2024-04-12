@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="sum.css">
+</head>
+
+<body>
+    <div class="d-flex align-items-center vh-100">
+        <div class="container mx-auto">
+            <h1 class="text-center">從 0 開始加到 N</h1>
+            <form>
+                <div class="text-center mb-3">
+                    <label for="nNumber" class="form-label">N：</label>
+                    <input type="number" class="form-control text-center" id="nNumber" value="0"
+                        aria-describedby="the number your want to count to">
+                    <button type="submit" class="btn mx-auto">送出</button>
+                </div>
+            </form>
+            <h3 class="text-center">結果：<span class="result-value">0</span></h3>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+        integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="sum.js"></script>
+</body>
+
+</html>
