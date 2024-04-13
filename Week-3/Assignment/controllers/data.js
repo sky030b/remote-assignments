@@ -8,6 +8,10 @@ const getData = (req, res) => {
         number = +number;
         const result = number * (number + 1) / 2;
         return res.status(200).send(`${result}`);
+
+        // Think about what will happen when N is very large.
+        // 如果使用迴圈來計算等差級數的話，執行程式的時間會隨著指定數字變大而變大，時間複雜度為 O(N)；
+        // 但如果使用等差級數的數學公式的話，執行程式的時間就會是 O(1)
     }
 }
 
