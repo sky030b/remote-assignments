@@ -12,24 +12,22 @@
 <body>
     <div class="d-flex align-items-center vh-100">
         <div class="container mx-auto">
-            <h1 class="text-center">從 0 開始加到 N</h1>
-            <form>
+            <h1 class="text-center">你的名字是？</h1>
+            <h2 class="text-center">What's your name?</h2>
+            <form action="/trackName" method="GET">
                 <div class="text-center mb-3">
-                    <label for="nNumber" class="form-label">N：</label>
-                    <input type="number" class="form-control text-center" id="nNumber" value="0"
-                        aria-describedby="the number your want to count to">
+                    <label for="name" class="form-label">Name: </label>
+                    <input type="text" class="form-control text-center" id="name" name="name">
                     <button type="submit" class="btn mx-auto">送出</button>
                 </div>
             </form>
-            <h3 class="text-center">結果：<span class="result-value">0</span></h3>
         </div>
     </div>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
         integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="module" src="sum.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
 
 </html>
