@@ -2,11 +2,11 @@ const getData = (req, res) => {
     let number = req.query.number;
     if (!number) {
         return res.status(400).send("Lack of Parameter");
-    } else if (isNaN(Number(number))) {
+    } else if (isNaN(Number(number)) || Number(number) < 0) {
         return res.status(400).send("Wrong Parameter");
     } else {
         number = +number;
-        const result = number * (number + 1) / 2;
+        const result = (Math.abs(number) + 1) * number / 2;
         return res.status(200).send(`${result}`);
 
         // Think about what will happen when N is very large.
