@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="all.css">
+</head>
+
+<body>
+    <div class="d-flex align-items-center vh-100">
+        <div class="container mx-auto">
+            <h1 class="text-center mb-3">歡迎來到首頁</h1>
+            <div id="errorMessage"></div>
+            <form class="text-center mb-3" action="/signup" method="POST">
+                <h1 class="text-center">註冊區</h1>
+                <div class="mb-3">
+                    <label for="email">信箱：</label>
+                    <input type="email" id="signupEmail" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password">密碼：</label>
+                    <input type="password" id="signupPassword" name="password" required>
+                </div>
+                <input type="submit" value="註冊">
+            </form>
+            <form class="text-center" action="/login" method="POST">
+                <h1 class="text-center">登入區</h1>
+                <div class="mb-3">
+                    <label for="email">信箱：</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password">密碼：</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <input type="submit" value="登入">
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
