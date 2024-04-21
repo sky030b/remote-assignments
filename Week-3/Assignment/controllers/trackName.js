@@ -6,7 +6,7 @@ const trackName = (req, res) => {
         res.cookie("name", name);
     }
 
-    res.redirect("/myName");
+    return res.redirect("/myName");
 }
 
 module.exports = trackName;
