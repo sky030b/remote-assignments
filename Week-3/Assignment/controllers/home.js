@@ -1,5 +1,5 @@
 const sayHello = (req, res) => {
-    res.send('<h1>Hello, My Server!</h1>');
+    return res.status(200).send('<h1>Hello, My Server!</h1>');
 }
 
 module.exports = sayHello;
