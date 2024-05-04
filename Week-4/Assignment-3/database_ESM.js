@@ -1,11 +1,13 @@
 import mysql from 'mysql2';
+import dotenv from 'dotenv';
+dotenv.config();
 
-const connection = mysql.createPool({
-	host: '127.0.0.1',
-	user: 'root',
-	password: '334658',
-	database: 'assignment'
+const pool = mysql.createPool({
+  host: process.env.MYSQL_HOST,
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DATABASE
 }).promise();
 
-const result = await connection.query("SELECT * FROM user");
-console.log(result[0]);
+const result = await pool.query("SELECT * FROM user");
+console.log(result);

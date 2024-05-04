@@ -40,7 +40,7 @@ async function signUp(email, password) {
       INSERT INTO user (email, password)
       VALUE (?, ?)
     `, [email, password]);
-    return getOneUser(email);
+    return user;
   } catch (error) {
     console.error(error);
   }

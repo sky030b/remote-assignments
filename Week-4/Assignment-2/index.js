@@ -23,8 +23,7 @@ function render(data) {
         for (key in item) {
             console.log(key)
             const newLi = document.createElement("li");
-            const newContent = document.createTextNode(`${key}: ${item[key]}`);
-            newLi.appendChild(newContent);
+            newLi.textContent = `${key}: ${item[key]}`;
             newUl.appendChild(newLi);
         }
         products.appendChild(newUl);
